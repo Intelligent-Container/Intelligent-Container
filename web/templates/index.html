@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>船舶传感器数据</title>
+<!--    <style></style>-->
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="../static/js/sensor.js"></script>
+    <script src="../static/js/tcpClient.js"></script>
+    <script src="../static/js/echarts.js"></script>
+
+    <script src="../static/js/wd.js"></script>
+    <script src="../static/js/sd.js"></script>
+
+    <script src="../static/js/yw.js"></script>
+    <script src="../static/js/zt.js"></script>
+    <script src="../static/js/wsdChart.js"></script>
+    <script src="../static/js/downloadFile.js"></script>
+
+    <!--    <script src="../static/js/earth.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/table.css">
+
+</head>
+<body>
+<div class="container">
+    <h1>船舶传感器数据</h1>
+</div>
+
+<div class="container">
+    <!-- 添加下载按钮 -->
+    <button class="myButton" onclick="downloadFile()">下载Excel记录</button>
+</div>
+
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div class="container">
+    <div id="mainWd" style="width: 500px; height: 300px;"></div>
+    <div id="mainSd" style="width: 500px; height: 300px;"></div>
+</div>
+
+<div class="container">
+    <table>
+        <tr>
+            <th>数据类型</th>
+            <th>数值</th>
+        </tr>
+        <tr>
+            <td>温度</td>
+            <td><span id="temperature">00</span></td>
+        </tr>
+        <tr>
+            <td>湿度</td>
+            <td><span id="humidity">00</span></td>
+        </tr>
+        <tr>
+            <td>姿态</td>
+            <td><span id="attitude">00</span></td>
+        </tr>
+        <tr>
+            <td>烟雾</td>
+            <td><span id="smoke">000</span></td>
+        </tr>
+    </table>
+</div>
+
+<div class="container2">
+    <div id="mainYw" style="width: 500px; height: 300px;"></div>
+    <div id="mainZt" style="width: 500px; height: 300px;"></div>
+    <!--    <div id="mainEarth" style="width: 600px; height: 400px;"></div>-->
+</div>
+
+<div class="container2">
+    <div id="mainWsd" style="width: 500px; height: 300px;"></div>
+    <!--    <div id="mainEarth" style="width: 600px; height: 400px;"></div>-->
+</div>
+
+<!-- 在这里添加JavaScript代码，用于更新传感器数据 -->
+<script src="../static/js/showEcharts.js"></script>
+<!--<script type="text/javascript"></script>-->
+
+
+</body>
+</html>
