@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "stdio.h": "c",
+        "bsp.h": "c",
+        "ns16550.h": "c",
+        "link.h": "c",
+        "ls1b_gpio.h": "c",
+        "ls1x_i2c_bus.h": "c",
+        "string.h": "c",
+        "uart.h": "c"
+    }
+}
