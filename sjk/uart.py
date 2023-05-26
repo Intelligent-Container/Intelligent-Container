@@ -14,4 +14,5 @@ def recv_data(q):
             # return data.decode("utf-8")
             # print(data.decode("utf-8"))
             print(data)# 打印数据
+
             q.put(data)
