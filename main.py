@@ -31,7 +31,6 @@ TIME = "00:00:00"
 exit_flag = False
 
 
-
 def update_data(user):
     conn = sqlite3.connect('./test.db')
     global YW, ZT, WD, SD
@@ -86,7 +85,6 @@ def printTime(user):
     if exit_flag:
         t.cancel()
     t.join()
-
 
 
 def get_current_time():
@@ -183,5 +181,4 @@ def main_fun():
 
 
 if __name__ == '__main__':
-
     main_fun()
