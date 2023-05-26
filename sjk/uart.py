@@ -13,5 +13,6 @@ def recv_data(q):
         if data:
             # return data.decode("utf-8")
             # print(data.decode("utf-8"))
-            print(data)
+            print(data)# 打印数据
+
             q.put(data)
